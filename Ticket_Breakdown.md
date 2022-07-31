@@ -19,14 +19,12 @@ You will be graded on the level of detail in each ticket, the clarity of the exe
 
 
 ## Tasks 1
-### PLEASE PLACE YOUR PR(s)  HERE
 
 ### Description
 
-Create a `add_agent_custom_id` migration on the `facilities` table. The new column will have the following properties:
- - name -> agent_custom_id
+Create a migration to add the new column on the facilities table. The column will be called `agent_custom_id`. The new column will have the following properties:
+ - name -> `agent_custom_id`
  - datatype -> string
- - length -> 255 max
  - Not Null -> true
 
  ### Acceptance Criteria
@@ -35,36 +33,31 @@ Create a `add_agent_custom_id` migration on the `facilities` table. The new colu
 
 
 ## Tasks 2
-### PLEASE PLACE YOUR PR(s)  HERE
 
 ### Description
 
-Write a function to generate a custom id for our `facilities` table. This ID wil be used when generating reports for our agents
+Write a function to generate a custom id for our newly created column `agent_custom_id` on the `facilities` table. This ID wil be used when generating reports for our agents
 
  ### Acceptance Criteria
 
- - Write unit tests for function
  - The function should always return a non-repeated id (we need a unique ID)
 
 ## Tasks 3
-### PLEASE PLACE YOUR PR(s)  HERE
 
 ### Description
 
-Write a function that gets the shifts for the agents as we shall use this to generate for them reports. This function can be named `getShiftsByAgent`. The function will be supplied with the agent ID, and shifts attached to that agent should be returned.
+Write a function that gets the shifts for agents, we shall use this to generate reports for them. An `agent_id` should be provided as an argument to the function and this should return shifts attached to that agent.
 
 ### Acceptance Criteria
 
 - Create a function called `getShiftsByAgent` that will return the shifts for the agents
-- Write unit tests for function
 - The function should only return shifts for agent ID provided.
 
 ## Tasks 4
-### PLEASE PLACE YOUR PR(s)  HERE
 
 ### Description
 
-Save the new created agent custom ID, when attaching an agent to the facility 
+Save the newly created agent custom ID, when attaching an agent to the facility 
 
 ### Acceptance Criteria
 
