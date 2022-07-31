@@ -6,9 +6,6 @@ describe("deterministicPartitionKey", () => {
     expect(trivialKey).toBe("0");
   });
 
-  // Notes
-  // We only hash when the partitionKey has not been provided
-
   it("Returns provided partition key when length is less than 255", () => {
     const event = {
       partitionKey: "hex33",
